@@ -57,7 +57,7 @@ input.onButtonPressed(Button.A, function () {
     }
 })
 input.onButtonPressed(Button.B, function () {
-    basic.showNumber(randint(5, 20))
+    basic.showNumber(0)
     basic.clearScreen()
-    basic.showString("REPS")
+    basic.showString("" + randint(5, 20) + "REPS")
 })
