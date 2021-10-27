@@ -50,10 +50,22 @@ input.onButtonPressed(Button.A, function () {
         basic.showString("WALL SQUATS")
     }
     if (Activity == 12) {
-        basic.showString("")
+        basic.showString("ARABESQUE")
     }
     if (Activity == 13) {
         basic.showString("BURPIES")
+    }
+    if (Activity == 14) {
+        basic.showString("'U' JUMPS")
+    }
+    if (Activity == 15) {
+        basic.showString("LATERAL SQUATS")
+    }
+    if (Activity == 15) {
+        basic.showString("TUMMY-UP PLANK(5 SECS FOR EACH REP)")
+    }
+    if (Activity == 15) {
+        basic.showString("TUMMY-UP PUSH UP")
     }
 })
 input.onButtonPressed(Button.B, function () {
