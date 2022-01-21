@@ -67,6 +67,9 @@ input.onButtonPressed(Button.A, function () {
     if (Activity == 15) {
         basic.showString("TUMMY-UP PUSH UP")
     }
+    if (Activity == 16) {
+        basic.showString("ONE ARM PUSH UP")
+    }
 })
 input.onButtonPressed(Button.B, function () {
     basic.showNumber(0)
