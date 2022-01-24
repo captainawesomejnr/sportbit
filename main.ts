@@ -3,20 +3,7 @@ input.onButtonPressed(Button.A, function () {
     Activity = randint(1, 13)
     if (Activity == 1) {
         for (let index = 0; index < 2; index++) {
-            basic.showLeds(`
-                . . # . .
-                # # # # #
-                . . # . .
-                . # . # .
-                # . . . #
-                `)
-            basic.showLeds(`
-                . . # . .
-                . # # # .
-                # . # . #
-                . # . # .
-                . # . # .
-                `)
+        	
         }
     }
     if (Activity == 2) {
