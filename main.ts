@@ -104,6 +104,7 @@ input.onButtonPressed(Button.A, function () {
 })
 function power_off () {
     basic.clearScreen()
+    music.playTone(523, music.beat(BeatFraction.Whole))
     basic.showLeds(`
         # # # # #
         # # # # #
@@ -111,6 +112,7 @@ function power_off () {
         # # # # #
         # # # # #
         `)
+    music.playTone(392, music.beat(BeatFraction.Whole))
     basic.showLeds(`
         . . . . .
         # # # # #
@@ -118,6 +120,7 @@ function power_off () {
         # # # # #
         # # # # #
         `)
+    music.ringTone(330)
     basic.showLeds(`
         . . . . .
         . . . . .
@@ -125,6 +128,7 @@ function power_off () {
         # # # # #
         # # # # #
         `)
+    music.playTone(262, music.beat(BeatFraction.Whole))
     basic.showLeds(`
         . . . . .
         . . . . .
