@@ -106,42 +106,42 @@ function power_off () {
     basic.clearScreen()
     music.playTone(523, music.beat(BeatFraction.Whole))
     basic.showLeds(`
-        # # # # #
-        # # # # #
-        # # # # #
-        # # # # #
-        # # # # #
+        . . # . .
+        # . # . #
+        # . . . #
+        # . . . #
+        . # # # .
         `)
     music.playTone(392, music.beat(BeatFraction.Whole))
     basic.showLeds(`
         . . . . .
-        # # # # #
-        # # # # #
-        # # # # #
-        # # # # #
+        # . # . #
+        # . . . #
+        # . . . #
+        . # # # .
         `)
     music.ringTone(330)
     basic.showLeds(`
         . . . . .
         . . . . .
-        # # # # #
-        # # # # #
-        # # # # #
+        # . . . #
+        # . . . #
+        . # # # .
         `)
     music.playTone(262, music.beat(BeatFraction.Whole))
     basic.showLeds(`
         . . . . .
         . . . . .
         . . . . .
-        # # # # #
-        # # # # #
+        # . . . #
+        . # # # .
         `)
     basic.showLeds(`
         . . . . .
         . . . . .
         . . . . .
         . . . . .
-        # # # # #
+        . # # # .
         `)
     control.reset()
 }
