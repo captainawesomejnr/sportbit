@@ -1,21 +1,20 @@
 {
-    "name": "Sport:bit",
-    "version": "1.2.0",
-    "description": "",
+    "name": "sportbit",
     "dependencies": {
         "core": "*",
-        "radio": "*",
         "microphone": "*"
     },
     "files": [
+        ".github/ISSUE_TEMPLATE/bug_report.md",
+        ".github/ISSUE_TEMPLATE/feature_request.md",
+        ".vscode/settings.json",
+        ".vscode/tasks.json",
+        "README.md",
         "main.blocks",
         "main.ts",
-        "README.md",
-        "tutorial-info-cache.json",
-        null
-    ],
-    "testFiles": [
-        "test.ts"
+        "test.ts",
+        "tsconfig.json",
+        "tutorial-info-cache.json"
     ],
     "targetVersions": {
         "target": "4.0.18",
