@@ -1,6 +1,8 @@
 let Activity = 0
+let Reps = 0
 input.onButtonPressed(Button.A, function () {
     Activity = randint(1, 13)
+    Reps = randint(5, 20)
     if (Activity == 1) {
         for (let index = 0; index < 2; index++) {
             basic.showLeds(`
@@ -72,7 +74,5 @@ input.onButtonPressed(Button.A, function () {
     }
 })
 input.onButtonPressed(Button.B, function () {
-    basic.showNumber(0)
-    basic.clearScreen()
-    basic.showString("" + randint(5, 20) + "REPS")
+    basic.showString("" + Reps + "REPS")
 })
