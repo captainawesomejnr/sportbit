@@ -1,5 +1,3 @@
-let Activity = 0
-let Reps = 0
 input.onButtonPressed(Button.A, function () {
     Activity = randint(1, 13)
     Reps = randint(5, 20)
@@ -58,7 +56,7 @@ input.onButtonPressed(Button.A, function () {
         basic.showString("BURPIES")
     }
     if (Activity == 14) {
-        basic.showString("'U' JUMPS")
+        basic.showString("SIDE PLANK (")
     }
     if (Activity == 15) {
         basic.showString("LATERAL SQUATS")
@@ -76,3 +74,33 @@ input.onButtonPressed(Button.A, function () {
 input.onButtonPressed(Button.B, function () {
     basic.showString("" + Reps + " " + "REPS")
 })
+let Reps = 0
+let Activity = 0
+for (let index = 0; index < 4; index++) {
+    basic.showString("PRESS A TO START")
+    for (let index = 0; index < 4; index++) {
+        basic.showLeds(`
+            . # # # .
+            # . # . #
+            # # # # #
+            # # . # #
+            . # # # .
+            `)
+        basic.showLeds(`
+            . . . . .
+            . . # . .
+            . # . # .
+            . . # . .
+            . . . . .
+            `)
+    }
+    basic.showLeds(`
+        . # # # .
+        # . # . #
+        # # # # #
+        # # . # #
+        . # # # .
+        `)
+    basic.pause(100)
+    basic.clearScreen()
+}
