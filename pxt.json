@@ -15,7 +15,8 @@
         "main.ts",
         "test.ts",
         "tsconfig.json",
-        "tutorial-info-cache.json"
+        "tutorial-info-cache.json",
+        null
     ],
     "targetVersions": {
         "target": "4.0.18",
